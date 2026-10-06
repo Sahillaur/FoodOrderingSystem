@@ -1,6 +1,5 @@
-// Frontend and API use the same origin through the local Foodie server.
-// The server forwards API requests to the Spring Boot backend on port 8080.
-const API_URL = "http://localhost:8080";
+// Frontend uses the deployed Spring Boot backend on Render.
+const API_URL = "https://food-ordering-backend-p03x.onrender.com";
 
 function getToken() {
     return localStorage.getItem("token");
