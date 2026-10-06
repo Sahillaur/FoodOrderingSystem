@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie - Profile</title>
+
+    <link
+            rel="stylesheet"
+            href="css/style.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= TOP BAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        Foodie<span>.</span>
+    </div>
+
+    <div class="top-actions">
+
+        <a
+                href="profile.html"
+                class="profile-icon"
+                title="Profile">
+
+            👤
+
+        </a>
+
+        <button class="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= PROFILE ================= -->
+
+<main>
+
+    <section class="auth-container">
+
+        <div class="auth-box">
+
+            <div class="logo">
+                My Profile
+            </div>
+
+
+            <p
+                    class="subtitle"
+                    id="profileSubtitle">
+
+                Create your customer profile
+
+            </p>
+
+
+            <!-- PROFILE FORM -->
+
+            <form id="profileForm">
+
+                <div class="input-group">
+
+                    <label>
+                        Name
+                    </label>
+
+                    <input
+                            type="text"
+                            id="customerName"
+                            placeholder="Enter your name"
+                            required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Phone
+                    </label>
+
+                    <input
+                            type="text"
+                            id="customerPhone"
+                            placeholder="Enter phone number"
+                            required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Email
+                    </label>
+
+                    <input
+                            type="email"
+                            id="customerEmail"
+                            placeholder="Enter email"
+                            required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Address
+                    </label>
+
+                    <input
+                            type="text"
+                            id="customerAddress"
+                            placeholder="Enter delivery address"
+                            required>
+
+                </div>
+
+
+                <button
+                        type="submit"
+                        class="primary-btn"
+                        id="profileButton">
+
+                    Create Profile
+
+                </button>
+
+            </form>
+
+
+            <!-- MESSAGE -->
+
+            <p id="profileMessage"></p>
+
+
+            <!-- PROFILE DETAILS -->
+
+            <div
+                    id="profileDetails"
+                    style="display: none;">
+
+                <h3>
+                    Profile Created Successfully 🎉
+                </h3>
+
+
+                <br>
+
+
+                <p>
+                    <strong>Name:</strong>
+                    <span id="showName"></span>
+                </p>
+
+
+                <p>
+                    <strong>Phone:</strong>
+                    <span id="showPhone"></span>
+                </p>
+
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="showEmail"></span>
+                </p>
+
+
+                <p>
+                    <strong>Address:</strong>
+                    <span id="showAddress"></span>
+                </p>
+
+
+                <br>
+
+
+                <a
+                        href="home.html"
+                        class="primary-btn">
+
+                    Go to Home
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= BOTTOM NAVIGATION ================= -->
+
+<nav class="bottom-nav">
+
+    <a
+            href="home.html"
+            class="bottom-nav-item">
+
+        <span>⌂</span>
+
+        <small>
+            Home
+        </small>
+
+    </a>
+
+
+    <a
+            href="restaurants.html"
+            class="bottom-nav-item">
+
+        <span>🏪</span>
+
+        <small>
+            Restaurants
+        </small>
+
+    </a>
+
+
+    <a
+            href="foods.html"
+            class="bottom-nav-item">
+
+        <span>🍴</span>
+
+        <small>
+            Food
+        </small>
+
+    </a>
+
+
+    <a
+            href="cart.html"
+            class="bottom-nav-item">
+
+        <span>🛒</span>
+
+        <small>
+            Cart
+        </small>
+
+    </a>
+
+
+    <a
+            href="orders.html"
+            class="bottom-nav-item">
+
+        <span>📦</span>
+
+        <small>
+            Orders
+        </small>
+    </a>
+
+</nav>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/api.js"></script>
+
+<script src="js/auth.js"></script>
+
+<script src="js/profile.js"></script>
+
+
+</body>
+
+</html>

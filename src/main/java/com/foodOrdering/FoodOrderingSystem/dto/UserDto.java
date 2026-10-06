@@ -1,0 +1,9 @@
+package com.foodOrdering.FoodOrderingSystem.dto;
+
+import lombok.Data;
+
+@Data
+public class UserDto {
+    private String username;
+    private String password;
+}

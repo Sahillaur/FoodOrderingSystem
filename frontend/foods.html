@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie - Food</title>
+
+    <link
+            rel="stylesheet"
+            href="css/style.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= TOP BAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        Foodie<span>.</span>
+    </div>
+
+    <div class="top-actions">
+
+        <a
+                href="profile.html"
+                class="profile-icon"
+                title="Profile">
+
+            👤
+
+        </a>
+
+        <button class="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= FOOD SECTION ================= -->
+
+<main>
+
+    <section class="restaurants">
+
+        <div class="section-header">
+
+            <div>
+
+                <p class="section-small">
+                    DELICIOUS
+                </p>
+
+                <h2 id="foodPageTitle">
+                    All Food
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div
+                id="foodContainer"
+                class="restaurant-container">
+
+            <p>
+                Loading food items...
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= BOTTOM NAVIGATION ================= -->
+
+<nav class="bottom-nav">
+
+    <a
+            href="home.html"
+            class="bottom-nav-item">
+
+        <span>⌂</span>
+
+        <small>
+            Home
+        </small>
+
+    </a>
+
+
+    <a
+            href="restaurants.html"
+            class="bottom-nav-item">
+
+        <span>🏪</span>
+
+        <small>
+            Restaurants
+        </small>
+
+    </a>
+
+
+    <a
+            href="foods.html"
+            class="bottom-nav-item active">
+
+        <span>🍴</span>
+
+        <small>
+            Food
+        </small>
+
+    </a>
+
+
+    <a
+            href="cart.html"
+            class="bottom-nav-item">
+
+        <span>🛒</span>
+
+        <small>
+            Cart
+        </small>
+
+    </a>
+
+
+    <a
+            href="orders.html"
+            class="bottom-nav-item">
+
+        <span>📦</span>
+
+        <small>
+            Orders
+        </small>
+
+    </a>
+
+</nav>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/api.js"></script>
+
+<script src="js/auth.js"></script>
+
+<script src="js/foods.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie - Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Foodie<span>.</span>
+    </div>
+
+    <div class="top-actions">
+
+        <a href="profile.html" class="profile-icon" title="Profile">
+            👤
+        </a>
+
+        <button class="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="welcome-strip">
+        <div>
+            <span class="welcome-label">GOOD FOOD • GOOD MOOD</span>
+            <h2>What are you craving today?</h2>
+            <p>Explore restaurants and discover something delicious.</p>
+        </div>
+        <a href="restaurants.html" class="outline-btn">Browse restaurants →</a>
+    </section>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-small">
+                FRESH • FAST • DELICIOUS
+            </div>
+
+            <h1>
+                Delicious food,
+                <br>
+                delivered to you.
+            </h1>
+
+            <p>
+                Discover your favourite food and restaurants,
+                order easily and enjoy every bite.
+            </p>
+
+            <a href="foods.html" class="primary-btn hero-btn">
+                Explore Food
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                    src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80"
+                    alt="Pizza">
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="categories">
+
+        <div class="section-header">
+
+            <div>
+                <p class="section-small">EXPLORE</p>
+                <h2>Food Categories</h2>
+            </div>
+
+        </div>
+
+
+        <div class="category-container">
+
+            <div
+                    class="category-card"
+                    onclick="openCategory('Pizza')">
+
+                <img
+                        src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=400&q=80"
+                        alt="Pizza">
+
+                <h3>Pizza</h3>
+
+                <p>Cheesy & delicious</p>
+
+            </div>
+
+
+            <div
+                    class="category-card"
+                    onclick="openCategory('Burger')">
+
+                <img
+                        src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80"
+                        alt="Burger">
+
+                <h3>Burger</h3>
+
+                <p>Juicy & tasty</p>
+
+            </div>
+
+
+            <div
+                    class="category-card"
+                    onclick="openCategory('Noodles')">
+
+                <img
+                        src="https://images.unsplash.com/photo-1557872943-16a5ac26437e?auto=format&fit=crop&w=400&q=80"
+                        alt="Noodles">
+
+                <h3>Noodles</h3>
+
+                <p>Hot & spicy</p>
+
+            </div>
+
+
+            <div
+                    class="category-card"
+                    onclick="openCategory('Dessert')">
+
+                <img
+                        src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=400&q=80"
+                        alt="Dessert">
+
+                <h3>Dessert</h3>
+
+                <p>Sweet & delightful</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- POPULAR RESTAURANTS -->
+
+    <section class="restaurants">
+
+        <div class="section-header">
+
+            <div>
+                <p class="section-small">DISCOVER</p>
+                <h2>Popular Restaurants</h2>
+            </div>
+
+            <a href="restaurants.html">
+                View All →
+            </a>
+
+        </div>
+
+
+        <div
+                id="popularRestaurantContainer"
+                class="restaurant-container">
+
+            <p>Loading restaurants...</p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- BOTTOM APP NAV -->
+
+<nav class="bottom-nav">
+
+    <a href="home.html" class="bottom-nav-item active">
+        <span>⌂</span>
+        <small>Home</small>
+    </a>
+
+    <a href="restaurants.html" class="bottom-nav-item">
+        <span>🏪</span>
+        <small>Restaurants</small>
+    </a>
+
+    <a href="foods.html" class="bottom-nav-item">
+        <span>🍴</span>
+        <small>Food</small>
+    </a>
+
+    <a href="cart.html" class="bottom-nav-item">
+        <span>🛒</span>
+        <small>Cart</small>
+    </a>
+
+    <a href="orders.html" class="bottom-nav-item">
+        <span>📦</span>
+        <small>Orders</small>
+    </a>
+
+</nav>
+
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/home.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+
+<div class="auth-layout">
+    <section class="auth-showcase register-showcase">
+        <div class="showcase-brand">Foodie<span>.</span></div>
+        <div class="showcase-content">
+            <div class="eyebrow">JOIN FOODIE</div>
+            <h1>Good food, good mood. Let’s get started.</h1>
+            <p>Create your account and make your next food order simpler and faster.</p>
+            <div class="showcase-pills">
+                <span>🍔 Explore</span>
+                <span>🛒 Order</span>
+                <span>📦 Track</span>
+            </div>
+        </div>
+        <div class="showcase-food">🍔</div>
+    </section>
+
+    <main class="auth-panel">
+        <div class="auth-box">
+            <div class="mobile-brand">Foodie<span>.</span></div>
+            <div class="auth-icon">✨</div>
+            <h2>Create account</h2>
+            <p class="subtitle">Join Foodie and start exploring delicious meals.</p>
+
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="registerUsername">Username</label>
+                    <div class="input-wrap">
+                        <span>👤</span>
+                        <input type="text" id="registerUsername" placeholder="Choose a username" autocomplete="username" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="registerPassword">Password</label>
+                    <div class="input-wrap">
+                        <span>🔒</span>
+                        <input type="password" id="registerPassword" placeholder="Create a password" autocomplete="new-password" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="primary-btn auth-submit">Create my account</button>
+            </form>
+
+            <p id="registerMessage" class="form-message"></p>
+
+            <div class="auth-divider"><span>ALREADY A MEMBER?</span></div>
+
+            <a href="login.html" class="secondary-btn">Back to login</a>
+        </div>
+    </main>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
